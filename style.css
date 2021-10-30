@@ -77,7 +77,7 @@ body {
   fill: rgb(99, 7, 99);
   transform: translateY(2px);
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(77, 20, 77);
 }
 
 .social-links .bi {
@@ -91,7 +91,7 @@ body {
   left: 0;
   width: 100vw;
   background: linear-gradient(to top right, black, rgb(54, 53, 53));
-  height: 600px;
+  height:620px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -259,15 +259,15 @@ aside p {
 }
 
 .bio-img {
-  width: 400px;
-  height: 400px;
+  width: 440px;
+  height: 540px;
   filter: brightness(110%);
 }
 
 .bio-img-container {
   border: solid 7px white;
-  width: 400px;
-  height: 400px;
+  width: 440px;
+  height: 540px;
   margin-right: 50px;
   background: grey;
 }
@@ -332,7 +332,7 @@ a {
   width: 50%;
   justify-content: space-evenly;
   margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .contact-phone,
@@ -418,7 +418,7 @@ a {
   width: 80%;
 }
 
-.schedule-btn::before {
+.schedule-btn:hover::before {
   content: "";
   top: 0;
   left: -100%;
@@ -430,9 +430,9 @@ a {
   transform: skew(-30deg);
   opacity: 0.6;
   animation-name: shimmer;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 
 @keyframes shimmer {
@@ -619,15 +619,14 @@ a {
   }
 
   .contact,
-  .testimonial-card,
   .contact-phone,
   .contact-email {
     width: 100%;
     margin: 1rem auto;
   }
   
-  .pricing-card {
-    width: 70%;
+  .pricing-card, .testimonial-card {
+    width: 60%;
     margin: 1rem auto;
   }
 
@@ -660,7 +659,7 @@ a {
   .toggle-menu a {
     color: white;
     border: 1px solid white;
-    padding: 3px 8px;
+    padding: 8px 12px;
     border-radius: 5px;
     line-height: 1;
   }

@@ -1,4 +1,4 @@
-let imageArr = ["./images/sunset.JPG", "./images/sunset-2.jpg"];
+let imageArr = ["./images/hannah1.jpeg", "./images/hannah2.jpeg"];
 let currentIndex = 0;
 let imageTag = document.querySelector(".bio-img");
 let timer;
