@@ -1,0 +1,138 @@
+#pic-5 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#pic-6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+#pic-4 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#pic-10 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#pic-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#pic-3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+#pic-10 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+#pic-12 {
+  grid-row-start: 9;
+  grid-row-end: 11;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#pic-13 {
+  grid-row-start: 9;
+  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+#pic-14 {
+  grid-row-start: 11;
+  grid-row-end: 14;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#pic-15, #pic-16 {
+    grid-row-start: 12;
+    grid-row-end: 14;
+}
+
+#pic-11 {
+  grid-row-start: 9;
+  grid-row-end: 11;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 218.75px);
+    grid-template-rows: repeat(16, 175px);
+    grid-gap: 15px;
+    margin-top: 40px;
+}
+
+#pic-7 {
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  #pic-9 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  
+  #pic-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .image {
+    border: rgb(192, 183, 183) solid 1px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+  }
+
+  .image-fade {
+    animation-name: fade;
+    animation-timing-function: linear;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5
+    }
+    100% {
+      opacity: 1;
+    }
+  }
