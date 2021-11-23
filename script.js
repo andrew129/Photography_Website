@@ -201,4 +201,3 @@ function createCards() {
 
 createCards()
 
-// add sick animation
