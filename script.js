@@ -124,9 +124,8 @@ jQuery(function () {
 });
 
 function displayImages() {
-  console.log(this.textContent)
+  window.location.href = '#gallery'
   let galleryName = this.textContent.split(' ')[1]
-  console.log(galleryName)
   photoArea.classList.remove('photo-section')
   photoArea.textContent = ''
   photoArea.classList.add('images')
@@ -163,7 +162,9 @@ function displayImages() {
 }
 
 function createCards() {
+  window.location.href = '#gallery'
   photoArea.classList.remove('images')
+  // window.scrollTo(500,0)
   photoArea.classList.add('photo-section')
   if (document.querySelector('.button-area')) {
     document.querySelector('.button-area').remove()
@@ -177,7 +178,7 @@ function createCards() {
   selectionText.textContent = 'Select A Category to View Images'
   document.querySelector('.gallery').insertBefore(selectionText, photoArea)
 
-  typesOfPhotos.forEach((photoType, index) => {
+  typesOfPhotos.forEach(photoType => {
     let newPhotoCardDiv = document.createElement('div')
     newPhotoCardDiv.classList.add('type-card')
     newPhotoCardDiv.setAttribute('id', photoType.title)

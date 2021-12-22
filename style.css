@@ -119,7 +119,7 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 30px;
-  height: 30px;
+  height: 50px;
   font-size: 15px;
   background: black;
   border: rgb(170, 3, 247) solid 2px;
@@ -128,7 +128,7 @@ body {
 
 .message {
   width: 100%;
-  height: 100px;
+  height:150px;
   font-size: 15px;
   border: rgb(170, 3, 247) solid 2px;
   color: white;
@@ -265,6 +265,7 @@ aside p {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+  padding: 0
 }
 
 .offerings {
@@ -479,6 +480,7 @@ a {
 
 .photo-section {
   display: flex;
+  flex-direction: row;
   width: 100%;
   margin-top: 20px;
   justify-content: center;
@@ -539,6 +541,7 @@ a {
 }
 
 #donate-btn {
+  display: block;
   background: linear-gradient(
     to right bottom,
     rgb(209, 23, 209),
@@ -601,6 +604,10 @@ a {
     box-sizing: border-box;
   }
 
+  .type-card {
+    height: 460px !important;
+  }
+
   img {
     max-width: 100% !important;
     height: auto !important;
@@ -615,13 +622,17 @@ a {
   }
 
   .bio-img-container {
-    width: 70% !important;
+    width: 80% !important;
     height: auto !important;
     margin: 0 auto 1rem;
   }
 
+  #phone {
+    display: none;
+  }
+
   .bio {
-    width: 70% !important;
+    width: 80% !important;
   }
 
   .social-links {
@@ -663,8 +674,7 @@ a {
   }
 
   #donate-btn {
-    margin: 0 auto 10px;
-    padding: 0 15px;
+    display: none;
   }
 
   #logo,
@@ -680,8 +690,13 @@ a {
     margin: 1rem auto;
   }
   
-  .pricing-card, .testimonial-card {
-    width: 60%;
+  .pricing-card {
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  .testimonial-card {
+    width: 90%;
     margin: 1rem auto;
   }
 
@@ -724,6 +739,14 @@ a {
     padding: 1rem;
   }
 
+  .photo-section {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+
   .navigation .title {
     max-width: 90%;
   }
@@ -746,6 +769,32 @@ a {
     text-align: left;
     max-width: 100%;
     width: 100%;
+  }
+
+  .type-card {
+    border-radius: 15px;
+    margin: 10px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-area {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .backBtn {
+    position: static;
+    width:  75%;
+    margin-top: 20px;
   }
 
   .right-nav {

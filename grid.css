@@ -136,3 +136,19 @@
       opacity: 1;
     }
   }
+
+  @media (max-width: 991px) {
+    .images {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      grid-gap: 0px;
+    }
+    .image {
+      opacity: 1;
+      width: 50%;
+    }
+    .image-fade {
+      animation: none;
+    }
+  }
