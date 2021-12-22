@@ -42,12 +42,16 @@ function startShow() {
 
 requestAnimationFrame(startShow);
 
-jQuery(function () {
-  jQuery(".toggle-menu a").click(function (e) {
+$(function () {
+  $(".toggle-menu a").click(function (e) {
     e.preventDefault();
-    jQuery(".right-nav").toggleClass("toggleNav");
+    $(".right-nav").toggleClass("toggleNav");
   });
 });
+
+$('.nav-link').click(function(e) {
+  $('.right-nav').toggleClass('toggleNav')
+})
 
 function displayImages() {
   window.location.href = '#gallery'
