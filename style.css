@@ -670,7 +670,8 @@ a {
 
   .nav-link {
     margin: 0 auto 2px;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: 18px;
   }
 
   #donate-btn {
@@ -813,5 +814,7 @@ a {
 
   .right-nav.toggleNav {
     display: flex;
+    justify-content: center;
+    height: 300px;
   }
 }
